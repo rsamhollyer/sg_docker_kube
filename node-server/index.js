@@ -1,7 +1,10 @@
 const app = require("express")();
 
 app.get("/", (req, res) => {
-  send("Hi There!");
-})
+  console.log(req)
+  res.send("Hi There!");
+});
 
-app.listen(8080, () => { console.log("Listening on port 8080") })
+app.listen(8080, () => {
+  console.log("Hi There!");
+});
